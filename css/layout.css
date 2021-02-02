@@ -187,6 +187,13 @@ ul#nav li.current a { color: #F06000; }
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
+#home h3{
+  line-height: 30px;
+   /*color: #7A7A7A;*/
+   color: #a1a1a1;
+}
+
+
 #about {
    background: #2B2B2B;
    padding-top: 96px;
