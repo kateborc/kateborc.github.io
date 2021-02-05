@@ -224,6 +224,20 @@ ul#nav li.current a { color: #F06000; }
    /*height: 120px;*/
    border-radius: 100%;
 }
+#about .profile-pic2 {
+   position: relative;
+   width: 100%;
+   border-radius: 100%;
+   margin-top: 10%;
+}
+#about .video-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#about .video {
+  margin-top: 5%;
+  height: 20em;
+}
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
