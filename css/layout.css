@@ -224,7 +224,7 @@ ul#nav li.current a { color: #F06000; }
    /*height: 120px;*/
    border-radius: 100%;
 }
-/*my*/
+/*my-start*/
 #about .profile-pic2 {
    position: relative;
    width: 100%;
@@ -246,13 +246,30 @@ ul#nav li.current a { color: #F06000; }
   width: 90%;
   height: 800px;
 }
+#about table{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%
+}
+#about img{
+  margin-top: 5%;
+  /*height: 250px;*/
+  width: 80%;
+}
 @media only screen and (max-width: 600px) {
   #about .embed-document {
-  width: 90%;
-  height: 450px;
+    width: 90%;
+    height: 450px;
+  }
+  #about img{
+    width: 100%;
+  }
 }
+#about .fit-p {
+  margin-left: 10%;
+  margin-right: 10%;
 }
-/*my*/
+/*my-end*/
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
