@@ -225,6 +225,9 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 100%;
 }
 /*my-start*/
+#nav-wrap li:hover {
+  background-color: #00d5ff;
+}
 #about .profile-pic2 {
    position: relative;
    width: 100%;
