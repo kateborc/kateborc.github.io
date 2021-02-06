@@ -224,6 +224,7 @@ ul#nav li.current a { color: #F06000; }
    /*height: 120px;*/
    border-radius: 100%;
 }
+/*my*/
 #about .profile-pic2 {
    position: relative;
    width: 100%;
@@ -238,6 +239,20 @@ ul#nav li.current a { color: #F06000; }
   margin-top: 5%;
   height: 20em;
 }
+#about .centered-row {
+  text-align: center;
+}
+#about .embed-document {
+  width: 90%;
+  height: 800px;
+}
+@media only screen and (max-width: 600px) {
+  #about .embed-document {
+  width: 90%;
+  height: 450px;
+}
+}
+/*my*/
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
