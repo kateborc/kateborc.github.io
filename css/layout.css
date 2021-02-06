@@ -233,7 +233,8 @@ ul#nav li.current a { color: #F06000; }
    position: relative;
    width: 100%;
    border-radius: 100%;
-   margin-top: 10%;
+   margin-top: 5%;
+   margin-bottom: 10%;
 }
 #about .video-wrapper {
   display: flex;
@@ -246,9 +247,9 @@ ul#nav li.current a { color: #F06000; }
   margin-right: 15%;
 }
 #about .video {
-  margin-top: 5%;
   width: 100%;
   height: 500px;
+  margin-bottom: 5%;
 }
 #about .centered-row {
   text-align: center;
@@ -263,7 +264,7 @@ ul#nav li.current a { color: #F06000; }
   margin-bottom: 10%
 }
 #about img{
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   /*height: 250px;*/
   width: 80%;
 }
@@ -276,7 +277,7 @@ ul#nav li.current a { color: #F06000; }
     width: 100%;
   }
   #about .video {
-    margin-top: 5%;
+    /*margin-top: 5%;*/
     width: 100%;
     height: 200px;
   }
@@ -289,7 +290,7 @@ ul#nav li.current a { color: #F06000; }
   margin-right: 10%;
 }
 #about .low-margin-bottom {
-  /*margin-bottom: 1px;*/
+  margin-bottom: 1px;
 }
 #about .outreach-entry {
   margin-bottom: 100px;
