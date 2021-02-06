@@ -33,21 +33,8 @@
 </head>
 
 <body>
-   <div>
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav" style="background-color: black">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="outreach.html">Outreach</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
+   <div id="nav-placeholder">
+      <!-- nav bar imported from menu.html -->
    </div>
 
 
@@ -73,7 +60,7 @@
                <div class="outreach-entry">
                   <img src="images/kate/polleneaters instagram banner.png" alt=""/>
 
-                  <p>My <a href = "https://www.instagram.com/polleneaters/">Polleneaters' Instagram page</a> documents my plant-pollinator research through photography, art, and interesting science facts.</p>
+                  <p>My <a href = "https://www.instagram.com/polleneaters/" target="_blank">Polleneaters' Instagram page</a> documents my plant-pollinator research through photography, art, and interesting science facts.</p>
                   <!--
                   <p><b>Published Science Communication:</b></p>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/mV3qwF9tfuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -83,7 +70,7 @@
                <div class="outreach-entry">
                   <img src="images/kate/reiman gardens pollinator fest banner.png" alt="" />
 
-                  <p>A public event organized by Toth lab and <a href="https://www.reimangardens.com/2019/06/pollinator-fest/">Reiman Garden’s at Iowa State University</a> to celebrate and inform attendees about pollinator research. Additionally, boy- and girl-scout groups use the event to award their insect badge. While the event was cancelled in 2020 due to the COVID-19 pandemic, I worked to create new educational materials for public education. I created a children's toy depicting the relationship with bees and flowers by encasing bee and plant specimens in epoxy puzzle pieces. Additionally, I plan to create a guide for the public to identify Iowan and midwestern bee species.</p>
+                  <p>A public event organized by Toth lab and <a href="https://www.reimangardens.com/2019/06/pollinator-fest/" target="_blank">Reiman Garden’s at Iowa State University</a> to celebrate and inform attendees about pollinator research. Additionally, boy- and girl-scout groups use the event to award their insect badge. While the event was cancelled in 2020 due to the COVID-19 pandemic, I worked to create new educational materials for public education. I created a children's toy depicting the relationship with bees and flowers by encasing bee and plant specimens in epoxy puzzle pieces. Additionally, I plan to create a guide for the public to identify Iowan and midwestern bee species.</p>
                </div>
 
                <!--
@@ -115,15 +102,13 @@
 
    <!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+   <script>
+      $(function(){
+        $("#nav-placeholder").load("/menu.html");
+      });
+   </script>
 
 </body>
 

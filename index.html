@@ -33,28 +33,15 @@
 </head>
 
 <body>
-   <div>
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav" style="background-color: black">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="outreach.html">Outreach</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
+   <div id="nav-placeholder">
+      <!-- nav bar imported from menu.html -->
    </div>
 
    <!-- Header
    ================================================== -->
    <header id="home">
       <div class="row banner" style="background-color: #2B2B2B;">
-         <div class="banner-text" style="">
+         <div class="banner-text">
             <h1 class="responsive-headline">Kate Borchardt</h1>
 
             <b><h3>I am a PhD student studying how to integrate conservation habitat into agricultural landscapes to improve plant-bee communities while providing environmental services.</h3></b>
@@ -95,17 +82,14 @@
 
    <!-- Java Script
    ================================================== -->
-   <!--
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
- -->
+   <script>
+      $(function(){
+        $("#nav-placeholder").load("/menu.html");
+      });
+   </script>
+
 </body>
 
 </html>
