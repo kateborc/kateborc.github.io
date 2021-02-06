@@ -238,12 +238,13 @@ ul#nav li.current a { color: #F06000; }
 #about .video-wrapper-margins {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 #about .video {
   margin-top: 5%;
-  height: 20em;
+  width: 100%;
+  height: 500px;
 }
 #about .centered-row {
   text-align: center;
@@ -269,6 +270,14 @@ ul#nav li.current a { color: #F06000; }
   }
   #about img{
     width: 100%;
+  }
+  #about .video {
+    margin-top: 5%;
+    width: 100%;
+    height: 200px;
+  }
+  #about .video-wrapper-margins {
+    margin: 0px;
   }
 }
 #about .fit-p {
