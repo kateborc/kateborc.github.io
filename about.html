@@ -22,21 +22,15 @@
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="bee-favicon.png" >
+   <link rel="shortcut icon" href="images/kate/bee-favicon.png" >
 
 </head>
 
 <body>
-   <div id="nav-placeholder">
-      <!-- nav bar imported from menu.html -->
-   </div>
-
+   <!-- Each placeholder section will be imported with JS -->
+   <div id="nav-placeholder"></div>
 
    <!-- About Section
    ================================================== -->
@@ -90,26 +84,18 @@
          </div> <!-- end .main-col -->
       </div>
 
-   </section> <!-- About Section End-->
+   </section>
+   <!-- Custom Section End-->
 
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-      </div>
-
-   </footer> <!-- Footer End-->
+   <div id="footer-placeholder"></div>
 
    <!-- Java Script
    ================================================== -->
    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
-
    <script>
       $(function(){
         $("#nav-placeholder").load("/menu.html");
+        $("#footer-placeholder").load("/footer.html");
       });
    </script>
 
