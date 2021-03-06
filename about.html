@@ -22,34 +22,15 @@
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="beeicon.png" >
+   <link rel="shortcut icon" href="images/kate/bee-favicon.png" >
 
 </head>
 
 <body>
-   <div>
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav" style="background-color: black">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="outreach.html">Outreach</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-   </div>
-
+   <!-- Each placeholder section will be imported with JS -->
+   <div id="nav-placeholder"></div>
 
    <!-- About Section
    ================================================== -->
@@ -59,7 +40,7 @@
 
          <div class="three columns">
 
-            <img class="profile-pic" src="images/kate/kate.jpg" alt="" style="margin-top: 10%"/>
+            <img class="profile-pic2" src="images/kate/kate.jpg" alt=""/>
 
          </div>
 
@@ -85,46 +66,42 @@
 
                </div>
 
-
             </div> <!-- end row -->
-            <div class="row">
 
 
-                  <h2>Past and Current Research</h2>
-                  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2RhDDwgmtpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/mV3qwF9tfuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/zQOXhmJL7-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     
-                  </p>
 
+            <div class="video-wrapper">
+
+               <h2>Past and Current Research</h2>
+
+               <a href="https://www.youtube.com/watch?v=2RhDDwgmtpI" target="_blank">Link to video</a>
+               <iframe class="video" src="https://www.youtube.com/embed/2RhDDwgmtpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+               <a href="https://www.youtube.com/watch?v=mV3qwF9tfuM" target="_blank">Link to video</a>
+               <iframe class="video" src="https://www.youtube.com/embed/mV3qwF9tfuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+               <a href="https://www.youtube.com/watch?v=zQOXhmJL7-c" target="_blank">Link to video</a>
+               <iframe class="video" src="https://www.youtube.com/embed/zQOXhmJL7-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <!-- width="560" height="315" -->
+
+            </div>
          </div> <!-- end .main-col -->
-
       </div>
 
-   </section> <!-- About Section End-->
+   </section>
+   <!-- Custom Section End-->
 
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-      </div>
-
-   </footer> <!-- Footer End-->
+   <div id="footer-placeholder"></div>
 
    <!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+   <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+   <script>
+      $(function(){
+        $("#nav-placeholder").load("/menu.html");
+        $("#footer-placeholder").load("/footer.html");
+      });
+   </script>
 
 </body>
 

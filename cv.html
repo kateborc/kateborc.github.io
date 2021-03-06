@@ -3,93 +3,81 @@
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Kate Borchardt</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+   <title>Kate Borchardt</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
 
    <!-- Mobile Specific Metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+   <!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
    <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="beeicon.png" >
+   ================================================== -->
+   <link rel="shortcut icon" href="images/kate/bee-favicon.png" >
 
 </head>
 
 <body>
-   <div>
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav" style="background-color: black">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="outreach.html">Outreach</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-   </div>
-
+   <!-- Each placeholder section will be imported with JS -->
+   <div id="nav-placeholder"></div>
 
    <!-- CV Section
    ================================================== -->
    <section id="about">
 
-      <div class="row" style="text-align: center;">
+      <div class="row">
 
-         <h1 style="margin-top: 25px">Curriculum Vitae</h1>
-         <p>If the embedded CV is not displaying properly, you can <u><a href="assets/cv.pdf">download the PDF.</a></u></p>
-         <p>Last updated: 31 January 2021</p>
+         <div class="centered-row">
 
-         <embed src="assets/cv.pdf" width="100%" height="800px" />
+            <div class="fit-p">
+
+               <h1>Curriculum Vitae</h1>
+               <p>If the embedded CV is not displaying properly, you can <u><a href="assets/cv.pdf" target="_blank">download the PDF.</a></u></p>
+               <p>Last updated: 31 January 2021</p>
+
+               <!-- original but deprecated -->
+               <!-- <embed src="assets/cv.pdf" width="100%" height="800px" /> -->
+
+               <!-- newer but still doesn't work on mobile -->
+               <!-- <object type="application/pdf" data="assets/cv.pdf"></object> -->
+
+               <!-- this works with mobile. change the ID in /file/<ID>/preview.
+                  The ID comes from google drive > file > share and it's in the URL
+
+               -->
+               <iframe class="embed-document" frameborder="0" scrolling="no"
+                 src="https://drive.google.com/file/d/1W0nFxjy1hTNZBXDMwlQkQbS0DmOE3mjE/preview">
+               </iframe>
+
+            </div>
+         </div>
 
       </div>
 
    </section>
    <!-- CV Section End-->
 
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-      </div>
-
-   </footer> <!-- Footer End-->
+   <div id="footer-placeholder"></div>
 
    <!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+   <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+   <script>
+      $(function(){
+        $("#nav-placeholder").load("/menu.html");
+        $("#footer-placeholder").load("/footer.html");
+      });
+   </script>
 
 </body>
 
