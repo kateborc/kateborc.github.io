@@ -42,7 +42,7 @@
             <div class="fit-p">
 
                <h1>Curriculum Vitae</h1>
-               <p>If the embedded CV is not displaying properly, you can <u><a href="assets/cv.pdf" target="_blank">download the PDF.</a></u></p>
+               <p>If the embedded CV is not displaying properly, you can <a href="https://drive.google.com/file/d/1W0nFxjy1hTNZBXDMwlQkQbS0DmOE3mjE" target="_blank">download the PDF.</a></p>
                <p>Last updated: 31 January 2021</p>
 
                <!-- original but deprecated -->
@@ -55,7 +55,7 @@
                   The ID comes from google drive > file > share and it's in the URL
 
                -->
-               <iframe class="embed-document" frameborder="0" scrolling="no"
+               <iframe class="embed-document" frameborder="0" scrolling="no" width=100%
                  src="https://drive.google.com/file/d/1W0nFxjy1hTNZBXDMwlQkQbS0DmOE3mjE/preview">
                </iframe>
 
@@ -73,10 +73,14 @@
    ================================================== -->
    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
    <script>
+      console.log(1)
+
       $(function(){
         $("#nav-placeholder").load("/menu.html");
         $("#footer-placeholder").load("/footer.html");
       });
+
+      console.log(2)
    </script>
 
 </body>

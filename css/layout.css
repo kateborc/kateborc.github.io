@@ -202,8 +202,10 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
+/*
 #about a, #about a:visited  { color: #fff; }
 #about a:hover, #about a:focus { color: #11ABB0; }
+*/
 #about h1 {
    font: 'opensans-bold', sans-serif;
    color: #fff;
@@ -255,8 +257,8 @@ ul#nav li.current a { color: #F06000; }
   text-align: center;
 }
 #about .embed-document {
-  width: 70%;
-  height: 800px;
+  width: 100%;
+  height: 1000px;
 }
 #about table{
   display: flex;
@@ -289,6 +291,15 @@ ul#nav li.current a { color: #F06000; }
   margin-left: 10%;
   margin-right: 10%;
 }
+#about a, #about a:focus {
+    color: #11ABB0;
+    text-decoration: none;
+    border-bottom: 1px solid ;
+}
+
+#about a:hover { color: blue; }
+/*#about a:visited  { color: pink; }*/
+
 #about .low-margin-bottom {
   margin-bottom: 1px;
 }
