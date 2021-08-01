@@ -2,86 +2,60 @@
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-   <title>Kate Borchardt</title>
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <head>
+      <div id="head-placeholder"></div>
+   </head>
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <body>
+      <!-- Each placeholder section will be imported with JS -->
+      <div id="nav-placeholder"></div>
 
-   <!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+      <!-- CV Section
+      ================================================== -->
+      <section id="about">
 
-   <!-- Favicons
-   ================================================== -->
-   <link rel="shortcut icon" href="images/kate/bee-favicon.png" >
+         <div class="row">
 
-</head>
+            <div class="centered-row">
 
-<body>
-   <!-- Each placeholder section will be imported with JS -->
-   <div id="nav-placeholder"></div>
+               <div class="fit-p">
 
-   <!-- CV Section
-   ================================================== -->
-   <section id="about">
+                  <h1>Curriculum Vitae</h1>
+                  <p>If the embedded CV is not displaying properly, you can <a href="https://drive.google.com/file/d/1W0nFxjy1hTNZBXDMwlQkQbS0DmOE3mjE" target="_blank">download the PDF.</a></p>
+                  <p>Last updated: 31 January 2021</p>
 
-      <div class="row">
+                  <!-- original but deprecated -->
+                  <!-- <embed src="assets/cv.pdf" width="100%" height="800px" /> -->
 
-         <div class="centered-row">
+                  <!-- newer but still doesn't work on mobile -->
+                  <!-- <object type="application/pdf" data="assets/cv.pdf"></object> -->
 
-            <div class="fit-p">
+                  <!-- this works with mobile. change the ID in /file/<ID>/preview.
+                     The ID comes from google drive > file > share and it's in the URL
 
-               <h1>Curriculum Vitae</h1>
-               <p>If the embedded CV is not displaying properly, you can <a href="https://drive.google.com/file/d/1W0nFxjy1hTNZBXDMwlQkQbS0DmOE3mjE" target="_blank">download the PDF.</a></p>
-               <p>Last updated: 31 January 2021</p>
+                  -->
+                  <iframe class="embed-document" frameborder="0" scrolling="no" src="https://drive.google.com/file/d/1W0nFxjy1hTNZBXDMwlQkQbS0DmOE3mjE/preview">
+                  </iframe>
 
-               <!-- original but deprecated -->
-               <!-- <embed src="assets/cv.pdf" width="100%" height="800px" /> -->
-
-               <!-- newer but still doesn't work on mobile -->
-               <!-- <object type="application/pdf" data="assets/cv.pdf"></object> -->
-
-               <!-- this works with mobile. change the ID in /file/<ID>/preview.
-                  The ID comes from google drive > file > share and it's in the URL
-
-               -->
-               <iframe class="embed-document" frameborder="0" scrolling="no" src="https://drive.google.com/file/d/1W0nFxjy1hTNZBXDMwlQkQbS0DmOE3mjE/preview">
-               </iframe>
+               </div>
+               <!-- fit-p end -->
 
             </div>
+            <!-- centered-row end -->
+
          </div>
+         <!-- about end -->
 
-      </div>
+      </section>
+      <!-- CV Section End-->
 
-   </section>
-   <!-- CV Section End-->
+      <div id="footer-placeholder"></div>
 
-   <div id="footer-placeholder"></div>
+      <!-- Java Script
+      ================================================== -->
+      <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+      <script language="JavaScript" type="text/javascript" src="/js/placeholders.js"></script>
 
-   <!-- Java Script
-   ================================================== -->
-   <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
-   <script>
-      console.log(1)
-
-      $(function(){
-        $("#nav-placeholder").load("/menu.html");
-        $("#footer-placeholder").load("/footer.html");
-      });
-
-      console.log(2)
-   </script>
-
-</body>
+   </body>
 
 </html>
