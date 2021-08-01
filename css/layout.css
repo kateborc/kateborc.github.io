@@ -213,8 +213,13 @@ ul#nav li.current a { color: #F06000; }*/
 */
 #about h1 {
    font: 'opensans-bold', sans-serif;
+   font-size: 3em;
    color: #fff;
    margin-bottom: 12px;
+   border-bottom: solid 2px;
+}
+#about h1.margin-bottom {
+   margin-bottom: 100px;
 }
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -246,12 +251,6 @@ ul#nav li.current a { color: #F06000; }*/
 #about .video-wrapper {
   display: flex;
   flex-direction: column;
-}
-#about .video-wrapper-margins {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 #about .video-link-div {
    text-align: left;
@@ -311,7 +310,7 @@ ul#nav li.current a { color: #F06000; }*/
   margin-bottom: 1px;
 }
 #about .outreach-entry {
-  margin-bottom: 100px;
+  margin-bottom: 20%;
 }
 /*my-end*/
 #about .contact-details { width: 41.66667%; }

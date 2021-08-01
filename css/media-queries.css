@@ -372,4 +372,9 @@
    footer .social-links { font-size: 20px; }
    footer .social-links li { margin-left: 14px; }   
 
+
+   #about .outreach-entry {
+     margin-bottom: 40%;
+   }
+
 }
