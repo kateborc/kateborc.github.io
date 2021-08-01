@@ -73,7 +73,13 @@
       <!-- Java Script
       ================================================== -->
       <script language="JavaScript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
-      <script language="JavaScript" type="text/javascript" src="/js/placeholders.js"></script>
+      <script>
+         $(function(){
+           $("#head-placeholder").load("/head.html");
+           $("#nav-placeholder").load("/menu.html");
+           $("#footer-placeholder").load("/footer.html");
+         });
+      </script>
 
    </body>
 
