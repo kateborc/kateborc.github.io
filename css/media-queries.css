@@ -171,8 +171,9 @@
       margin: 0 auto; 
       padding: 0 4%;           
       text-align: left;
-      border-bottom: 1px solid #2D2E34;
-      border-bottom-style: dotted; 
+/*      border-bottom: 1px solid #2D2E34;
+      border-bottom-style: dotted; */
+      border: solid transparent;
    }
   
    ul#nav li a {  
@@ -182,6 +183,7 @@
       margin: 12px 0; 
       line-height: 16px; /* reset line-height from 48px */
       border: none;
+
    }  
 
 
@@ -370,13 +372,8 @@
    footer .social-links { font-size: 20px; }
    footer .social-links li { margin-left: 14px; }   
 
+   #about .outreach-entry, .about-entry {
+     margin-bottom: 30%;
+   }
+
 }
-
-
-
-
-
-
-
-
-
