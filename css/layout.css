@@ -218,7 +218,7 @@ ul#nav li.current a { color: #F06000; }*/
    margin-bottom: 12px;
    border-bottom: solid 2px;
 }
-#mysection h1.margin-bottom {
+#mysection h1.margin-bottom, h1.margin-bottom-long {
    margin-bottom: 100px;
 }
 #mysection h2 {
@@ -306,7 +306,13 @@ ul#nav li.current a { color: #F06000; }*/
   #mysection .video-wrapper-margins {
     margin: 0px;
   }
+  #mysection h1.margin-bottom {
+   font-size: 25px;
+  }
+
 }
+
+
 #mysection .fit-p {
   margin-left: 10%;
   margin-right: 10%;
