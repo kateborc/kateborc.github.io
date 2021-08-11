@@ -262,6 +262,9 @@ ul#nav li.current a { color: #F06000; }*/
 #mysection .left-row {
    text-align: left;
 }
+#mysection h2.class-detail {
+  text-decoration: underline;
+}
 #mysection .video {
   width: 100%;
   height: 500px;
@@ -528,8 +531,31 @@ ul#nav li.current a { color: #F06000; }*/
 }
 
 /* ------------------------------------------------------------------ */
+/*  Course Page
+/* ------------------------------------------------------------------ */
+
+#mysection .pdflist {
+  margin-bottom: 20px;
+}
+
+#mysection .pdflist p {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+#mysection .pdflist h2 {
+  margin-bottom: 0px;
+  text-align: left;
+  text-decoration: underline;
+  }
+
+
+
+/* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
+
+
 
 #portfolio {
    background: #ebeeee;
