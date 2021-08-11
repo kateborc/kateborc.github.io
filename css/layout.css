@@ -8,7 +8,7 @@
    TOC:
    a. General Styles
    b. Header Styles
-   c. About Section
+   c. mysection Section
    d. Resume Section
    e. Portfolio Section
    f. Call To Action Section
@@ -185,7 +185,7 @@ ul#nav li.current a { color: #F06000; }*/
 
 
 /* ------------------------------------------------------------------ */
-/* c. About Section
+/* c. mysection Section
 /* ------------------------------------------------------------------ */
 
 #home h3{
@@ -200,7 +200,7 @@ ul#nav li.current a { color: #F06000; }*/
 }
 
 
-#about {
+#mysection {
    background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 66px;
@@ -208,126 +208,139 @@ ul#nav li.current a { color: #F06000; }*/
 }
 
 /*
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#mysection a, #mysection a:visited  { color: #fff; }
+#mysection a:hover, #mysection a:focus { color: #11ABB0; }
 */
-#about h1 {
+#mysection h1 {
    font: 'opensans-bold', sans-serif;
    font-size: 3em;
    color: #fff;
    margin-bottom: 12px;
    border-bottom: solid 2px;
 }
-#about h1.margin-bottom {
+#mysection h1.margin-bottom {
    margin-bottom: 100px;
 }
-#about h2 {
+#mysection h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
 }
-#about p {
+#mysection h2.publications-year {
+   text-align: left;
+   text-decoration: underline;
+}
+#mysection p {
    line-height: 30px;
    /*color: #7A7A7A;*/
    color: #a1a1a1;
 }
-#about .profile-pic {
-   position: relative;
-   width: 100%;
-   /*height: 120px;*/
-   border-radius: 100%;
-}
-/*my-start*/
 #nav-wrap li:hover {
   background-color: #00d5ff;
 }
-#about .profile-pic2 {
+#mysection .publications {
+   text-align: left;
+}
+#mysection .profile-pic {
    position: relative;
    width: 100%;
    border-radius: 100%;
    margin-top: 5%;
    margin-bottom: 10%;
 }
-#about .video-wrapper {
+#mysection .acknowledgements-pic {
+   position: relative;
+   width: 70%;
+   border-radius: 100%;
+   margin-bottom: 10%;
+}
+#mysection .video-wrapper {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
-#about .video-link-div {
+#mysection .left-row {
    text-align: left;
 }
-#about .video {
+#mysection .video {
   width: 100%;
   height: 500px;
   margin-bottom: 5%;
 }
-#about .centered-row {
-  text-align: center;
+#mysection .centered-row {
+   text-align: center;
+   margin-left: 10%;
+   margin-right: 10%;
+
+   width: 96%;
+   max-width: 1020px;
+   margin: 0 auto;
 }
-#about .embed-document {
-  width: 100%;
+#mysection .embed-document {
+  width: 900px;
   height: 1000px;
 }
-#about table{
+#mysection table{
   display: flex;
   justify-content: center;
   margin-bottom: 10%
 }
-#about img{
+#mysection img{
   /*margin-top: 5%;*/
   /*height: 250px;*/
   width: 80%;
 }
 @media only screen and (max-width: 600px) {
-  #about .embed-document {
+  #mysection .embed-document {
     width: 90%;
     height: 450px;
   }
-  #about img{
+  #mysection img{
     width: 100%;
   }
-  #about .video {
+  #mysection .video {
     /*margin-top: 5%;*/
     width: 100%;
     height: 200px;
   }
-  #about .video-wrapper-margins {
+  #mysection .video-wrapper-margins {
     margin: 0px;
   }
 }
-#about .fit-p {
+#mysection .fit-p {
   margin-left: 10%;
   margin-right: 10%;
 }
-#about a, #about a:focus {
+#mysection a, #mysection a:focus {
     color: #11ABB0;
     text-decoration: none;
     border-bottom: 1px solid ;
 }
 
-#about a:hover { color: blue; }
+#mysection a:hover { color: blue; }
 
-#about .low-margin-bottom {
+#mysection .low-margin-bottom {
   margin-bottom: 1px;
 }
-#about .outreach-entry {
+#mysection .outreach-entry {
   margin-bottom: 20%;
 }
 /*my-end*/
-#about .contact-details { width: 41.66667%; }
-#about .download {
+#mysection .contact-details { width: 41.66667%; }
+#mysection .download {
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
-#about .download .button {
+#mysection .main-col { padding-right: 5%; }
+#mysection .download .button {
    margin-top: 6px;
    background: #444;
 }
-#about .download .button:hover {
+#mysection .download .button:hover {
    background: #fff;
    color: #2B2B2B;
 }
-#about .download .button i {
+#mysection .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
