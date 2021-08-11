@@ -262,9 +262,6 @@ ul#nav li.current a { color: #F06000; }*/
 #mysection .left-row {
    text-align: left;
 }
-#mysection h2.class-detail {
-  text-decoration: underline;
-}
 #mysection .video {
   width: 100%;
   height: 500px;
@@ -312,7 +309,6 @@ ul#nav li.current a { color: #F06000; }*/
   #mysection h1.margin-bottom {
    font-size: 25px;
   }
-
 }
 
 
@@ -535,21 +531,23 @@ ul#nav li.current a { color: #F06000; }*/
 /* ------------------------------------------------------------------ */
 
 #mysection .pdflist {
+  margin-bottom: 5%;
+}
+#mysection .pdflist .pdflist-section {
   margin-bottom: 20px;
 }
-
 #mysection .pdflist p {
   margin-bottom: 0px;
   text-align: left;
 }
-
-#mysection .pdflist h2 {
+#mysection h2.class-detail {
   margin-bottom: 0px;
   text-align: left;
   text-decoration: underline;
-  }
-
-
+}
+#mysection .pdflist p.class-subdetail {
+   font-weight: bold;
+}
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
