@@ -135,6 +135,15 @@ nav .navbar-toggler-icon {
 }
 
 
+/* .content {
+  position: relative;
+}
+
+#navbarNavAltMarkup {
+  position: absolute;
+  z-index: 1;
+} */
+
 #toTopBtn {
   position: fixed;
   bottom: 26px;
@@ -288,6 +297,16 @@ ul#nav li a {
 /*ul#nav li a:active { background-color: pink !important; }
 ul#nav li.current a { color: #F06000; }*/
 
+#home {
+  min-height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+  #home {
+    /* height: auto; */
+    height: 1rem;
+  }
+}
+
 #home h3{
   line-height: 30px;
   color: var(--text-color);
@@ -310,6 +329,8 @@ ul#nav li.current a { color: #F06000; }*/
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
+   min-height: 100vh; 
+/* fixes pages where there isn't enough content, assuming no footer */
 }
 
 

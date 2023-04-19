@@ -10,7 +10,7 @@ $( document ).ready(function() {
         
         // load scrollup button function
         $(window).scroll(function() {
-          if ($(this).scrollTop() > 50) {
+          if ($(this).scrollTop() > 25) {
             $('#toTopBtn').fadeIn();
           } else {
             $('#toTopBtn').fadeOut();
@@ -26,6 +26,6 @@ $( document ).ready(function() {
     });
 
     // load footer
-    $("#footer-placeholder").load("/templates/footer.html");
+    // $("#footer-placeholder").load("/templates/footer.html");
 
 });
