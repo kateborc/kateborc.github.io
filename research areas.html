@@ -34,43 +34,91 @@
 </head>
 
 <body>
-    <!-- Each placeholder section will be imported with JS -->
     <div id="nav-placeholder"></div>
 
-<!-- Acknowledgements Section
-    ================================================== -->
-<section id="mysection">
-
-        <div class="row">
-
-            <div class="three columns">
-                <img class="profile-pic" src="/images/kate/bee on purple.JPG" alt=""/>
-                <img class="profile-pic" src="/images/kate/polfus on soli sp.JPG" alt=""/>
-                <img class="profile-pic" src="/images/kate/bombus phatan.JPG" alt=""/>
+    <section id="mysection">
+        <div class="container">
+            <div class="pollinator-row">
+                <div class="pollinator-image">
+                    <img src="/images/kate/bee on purple.JPG" alt="Bee on purple"/>
+                </div>
+                <div class="pollinator-text">
+                    <h2>Plant-Pollinator Communities:</h2>
+                    <p><b>Using species interactions for a systems-ecology approach to evaluate conservation habitats for community resilience, disease transmission, and rare species support.</b> I used this approach when evaluating an increasingly popular conservation practice called <a href="https://www.nrem.iastate.edu/research/STRIPS/content/what-are-prairie-strips" target="_blank">prairie strips</a>, finding beneficial wild plant-bee community functions <a href="/assets/publications/2023 Ecological networks approach.pdf" target="_blank">(Borchardt et al., 2023)</a> that were not negatively affected by the presence of a honey apiary from early to mid-summer <a href="/assets/publications/2025 st clair; insecticide application.pdf" target="_blank">(Borchardt et al., 2025)</a>. Currently, I am investigating the potential to design habitats that support a diverse pollinator community while decreasing a bee-related pathogen (Ongoing post-doctoral work). </p>
+                </div>
             </div>
 
-            <div class="nine columns main-col">
-
-                <h2>Plant-Pollinator Communities:</h2> 
-                <p><b>Using species interactions for a systems-ecology approach to evaluate conservation habitats for community resilience, disease transmission, and rare species support.</b> I used this approach when evaluating an increasingly popular conservation practice called <a href="https://www.nrem.iastate.edu/research/STRIPS/content/what-are-prairie-strips" target="_blank">prairie strips</a>, finding beneficial wild plant-bee community functions <a href="/assets/publications/2023 Ecological networks approach.pdf" target="_blank">(Borchardt et al., 2023)</a> that were not negatively affected by the presence of a honey apiary from early to mid-summer <a href="/assets/publications/2025 st clair; insecticide application.pdf" target="_blank">(Borchardt et al., 2025)</a>. Currently, I am investigating the potential to design habitats that support a diverse pollinator community while decreasing a bee-related pathogen (Ongoing post-doctoral work). </p>
-
-                <h2>Wasps as Pollinators:</h2> 
-                <p><b>Investigating the pollination services of wasps and the role of wasps in wider pollinator communities, such as pathogen transmission networks.</b> I found wasp families fill a distinct ecological niche from bees, carry similar pollen compositions on their body to bee families, and paper wasps can deposit similar amounts of pollen in a single visit to a flower as bumble bees<a href="/assets/publications/2025 Honey bee prairie strip.pdf" target="_blank"> (Borchardt et al., 2024)</a>. I am currently investigating if a common bee pathogen is present in wild wasps and can be transmitted between bees and wasps (Ongoing post-doctoral work).</p>
-
-                <h2>Pollinator Foraging Behavior:</h2> 
-                <p><b>Using computer simulation to understand how floral community shifts impact the foraging behavior of generalist pollinators.</b> I built an individual-based model to determine how past foraging experiences influence current behavior specifically regarding the number and effect of each past experience and the cost of switching between plant species. I found that the main driver of foraging behavior is the number of past experiences used to inform behavior, which causes behavior to lag behind shifts in the floral community (Borchardt et al., in prep.).</p>
-
+            <div class="pollinator-row">
+                <div class="pollinator-image">
+                    <img src="/images/kate/polfus on soli sp.JPG" alt="Polfus on soli"/>
+                </div>
+                <div class="pollinator-text">
+                    <h2>Wasps as Pollinators:</h2>
+                    <p><b>Investigating the pollination services of wasps and the role of wasps in wider pollinator communities, such as pathogen transmission networks.</b> I found wasp families fill a distinct ecological niche from bees, carry similar pollen compositions on their body to bee families, and paper wasps can deposit similar amounts of pollen in a single visit to a flower as bumble bees<a href="/assets/publications/2025 Honey bee prairie strip.pdf" target="_blank"> (Borchardt et al., 2024)</a>. I am currently investigating if a common bee pathogen is present in wild wasps and can be transmitted between bees and wasps (Ongoing post-doctoral work).</p>
+                </div>
             </div>
-            <!-- nine columns main-col end -->
 
+            <div class="pollinator-row">
+                <div class="pollinator-image">
+                    <img src="/images/kate/bombus phatan.JPG" alt="Bombus phatan"/>
+                </div>
+                <div class="pollinator-text">
+                    <h2>Pollinator Foraging Behavior:</h2>
+                    <p><b>Using computer simulation to understand how floral community shifts impact the foraging behavior of generalist pollinators.</b> I built an individual-based model to determine how past foraging experiences influence current behavior specifically regarding the number and effect of each past experience and the cost of switching between plant species. I found that the main driver of foraging behavior is the number of past experiences used to inform behavior, which causes behavior to lag behind shifts in the floral community (Borchardt et al., in prep.).</p>
+                </div>
+            </div>
         </div>
-        <!-- row end -->
-
     </section>
-    <!-- Custom Section End-->
 
     <div id="footer-placeholder"></div>
 
+    <style>
+        /* Center the content */
+        .container {
+            max-width: 1000px; /* Adjust to preferred width */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .pollinator-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; /* space between image and text */
+            margin: 20px 0;
+        }
+
+        .pollinator-image {
+            flex: 1 1 200px;
+        }
+
+        .pollinator-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .pollinator-text {
+            flex: 2 1 400px;
+        }
+
+        .pollinator-text h2 {
+            margin-top: 0;
+        }
+
+        /* Mobile: stack image above text */
+        @media (max-width: 768px) {
+            .pollinator-row {
+                flex-direction: column;
+                align-items: center; /* center images and text */
+                text-align: center;
+            }
+
+            .pollinator-image, .pollinator-text {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </body>
+
 
 </html>
